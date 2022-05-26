@@ -1,8 +1,10 @@
 # Template file for 'dolphin-emu'
 pkgname=dolphin-emu
-version=5.0.16101
+#version=5.0.16101
+version=5.0.16520
 revision=1
-_dolphin_commit=8ecfa537a242de74d2e372e30d9d79b14584b2fb
+#_dolphin_commit=8ecfa537a242de74d2e372e30d9d79b14584b2fb
+_dolphin_commit=7fcc866c4118487c010116a2ea164abc867e65f4
 _mgba_commit=40d4c430fc36caeb7ea32fd39624947ed487d2f2
 #Version/hash pair can be found at https://dolphin-emu.org/download/
 archs="x86_64* aarch64* ppc64le* i686*"
@@ -25,7 +27,8 @@ license="GPL-2.0-or-later"
 homepage="http://dolphin-emu.org"
 distfiles="https://github.com/dolphin-emu/dolphin/archive/${_dolphin_commit}.tar.gz
  https://github.com/mgba-emu/mgba/archive/${_mgba_commit}.tar.gz"
-checksum="a7bff69fce6466668c36e6c7ac3838434d64bb315cd2ad22817c943a9887f6e5
+#checksum="a7bff69fce6466668c36e6c7ac3838434d64bb315cd2ad22817c943a9887f6e5
+checksum="dd8d1d8e4fa8f62ae6dc053e67f4bdb568a8e63668fc4a6a11856bcd4b9ed8ba
  3cabf00a97cf4fb15fe8524b3d02190acdd003f25967cdbbf8de958649b8061b"
 nopie=yes
 
