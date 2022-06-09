@@ -3,21 +3,26 @@
 pkgname=zen-kernel
 #version=5.16.20
 #version=5.17.5-lqx2
-version=5.17.5
+#version=5.17.5
+version=5.17.13
 revision=1
 #wrksrc="linux-${version%.*}"
-wrksrc="zen-kernel-5.17.5-lqx2"
-short_desc="Linux kernel and modules (5.17.5-lqx2 series)"
+#wrksrc="zen-kernel-5.17.5-lqx2"
+wrksrc="zen-kernel-5.17.13-lqx1"
+#short_desc="Linux kernel and modules (5.17.5-lqx2 series)"
+short_desc="Linux kernel and modules (5.17.13-lqx1 series)"
 maintainer="Érico Nogueira <ericonr@disroot.org>"
 license="GPL-2.0-only"
 homepage="https://www.kernel.org"
 #distfiles="https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-${version%.*}.tar.xz
 #distfiles="https://github.com/zen-kernel/zen-kernel/archive/refs/tags/v${version}.tar.gz"
-distfiles="https://github.com/zen-kernel/zen-kernel/archive/refs/tags/v5.17.5-lqx2.tar.gz"
+#distfiles="https://github.com/zen-kernel/zen-kernel/archive/refs/tags/v5.17.5-lqx2.tar.gz"
+distfiles="https://github.com/zen-kernel/zen-kernel/archive/refs/tags/v5.17.13-lqx1.tar.gz"
  #https://cdn.kernel.org/pub/linux/kernel/v5.x/patch-${version}.xz"
 #checksum="027d7e8988bb69ac12ee92406c3be1fe13f990b1ca2249e226225cd1573308bb
  #619cd0e39db62b581107cd71dbc1fc52654f94d4306fd02e806ab599f06d0cd8"
-checksum="215627e1d2ecd18241b173b00ae13711d689abfa3f84c5d03c808c296a42a8d0"
+#checksum="215627e1d2ecd18241b173b00ae13711d689abfa3f84c5d03c808c296a42a8d0"
+checksum="0841a9a96e956b58911c83c1c527b01560ac2ad57c51069c233bb4e373c1ac89"
 #skip_extraction="patch-${version}.xz"
 python_version=3
 
@@ -33,7 +38,8 @@ preserve=yes
 hostmakedepends="tar xz bc elfutils-devel flex gmp-devel kmod libmpc-devel
  openssl-devel perl uboot-mkimage cpio pahole python3"
 
-_kernver="5.17.5-lqx2_${revision}"
+#_kernver="5.17.5-lqx2_${revision}"
+_kernver="5.17.13-lqx1_${revision}"
 triggers="kernel-hooks"
 kernel_hooks_version="${_kernver}"
 
